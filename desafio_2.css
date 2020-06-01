@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-repeat: no-repeat;
+  height: 1350px;
+  background-image: linear-gradient(
+    to bottom right,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871
+  );
+}
+h1 {
+  position: relative;
+  font-size: 60px;
+  text-align: center;
+  top: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+.classform1 {
+  position: absolute;
+  left: 650px;
+  top: 200px;
+  width: 600px;
+  height: 70px;
+  overflow: hidden;
+}
+.text1 {
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.label-name {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 2px solid black;
+}
+.label-name::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: -2px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #ffffff;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.content-name {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+.text1:focus + .label-name .content-name,
+.text1:valid + .label-name .content-name {
+  transform: translateY(-150%);
+  font-size: 20px;
+  color: #fdffff;
+}
+.text1:focus + .label-name::after,
+.text1:valid + .label-name::after {
+  transform: translateX(0%);
+}
+
+.Find-Users {
+  position: absolute;
+  border: 2px solid black;
+  top: 450px;
+  width: 800px;
+  margin-left: 20px;
+  left: 50px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px black;
+  max-height: 800px;
+
+  overflow: auto;
+}
+.Find-Users h2 {
+  text-align: center;
+  font-size: 60px;
+}
+.Statistic-Users {
+  position: absolute;
+  border: 2px solid black;
+  top: 450px;
+  width: 800px;
+  margin-left: 20px;
+  left: 950px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px black;
+  overflow: auto;
+}
+.Statistic-Users h2 {
+  text-align: center;
+  font-size: 58px;
+}

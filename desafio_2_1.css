@@ -1,0 +1,26 @@
+.UserSpace {
+  border: solid gainsboro;
+  border-radius: 5px;
+  width: 320px;
+  box-shadow: 3px 3px 3px black;
+  margin: 20px;
+}
+#UserEdit {
+  border-radius: 50%;
+  width: 80px;
+  margin-right: 15px;
+}
+.img-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: flex-start;
+}
+.flex-box {
+  font-size: 20px;
+}
+.statistic1 {
+  position: relative;
+  font-size: 25px;
+  margin: 10px;
+}
